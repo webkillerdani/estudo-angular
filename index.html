@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="estudoAngular">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/angular-bootstrap/ui-bootstrap-tpls.js">
+	
+</head>
+<body>
+
+<main ng-controller='PlanoEscolhidoController'>
+	
+	<div class="loader" ng-show="mostrarLoader"><img src="loader.gif"></div>
+	<section ng-show='passo==1'>
+		
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-4">
+					<h1>plano1</h1>
+					<h3>39,90</h3>
+					<p>plano básico para iniciantes</p>
+					<a href="#" ng-click='contratar(this)'>Contratar</a>
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+
+	<section ng-show='passo==2'>
+		
+		<div class="container">
+			
+			<form ng-submit="enviarApi">
+				
+				<input type="text" name="nome" ng-model="pessoa.nome">
+				<input type="email" name="email" ng-model="pessoa.email">
+				<input type="cpf" name="cpf" ng-model="pessoa.cpf">
+				<input type="submit" value="enviar" >
+
+			</form>
+
+		</div>
+
+	</section>
+
+	<section ng-show='passo==3'>
+		<div class="container">
+			
+			<h1>Seus dados foram enviados com sucesso</h1>
+			<h2>Houve um erro tente novamente mais tarde!</h2>
+
+		</div>
+	</section>
+
+</main>
+
+	
+	
+<script src="/bower_components/angular/angular.min.js"></script>
+<script src="/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "estudo-angular",
+  "homepage": "https://github.com/webkillerdani/estudo-angular",
+  "authors": [
+    "webkillerdani <dani_desenvolvimento@yahoo.com.br>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-bootstrap": "^2.5.0"
+  }
+}
